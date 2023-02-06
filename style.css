@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1c1f40;
+  color: white;
+  height: 100vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section {
+  margin-top: 1rem;
+  background-color: #1c1f26;
+  width: 24vw;
+  border-radius: 8px;
+}
+section .container-calc {
+  height: 22vh;
+  background: #c9c8c8;
+  color: black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  font-size: 2.2rem;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.back {
+  background-color: transparent;
+  border: 1px solid #1c1f26;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  padding: 0 0.4rem;
+  cursor: pointer;
+  line-height: 1;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+.back:hover {
+  color: white;
+  background-color: #1c1f26;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.container-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  gap: 0.5rem;
+}
+.container-buttons .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.container-buttons .buttons button {
+  background-color: #2f3038;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 0.5;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.container-buttons .buttons button:hover {
+  transform: scale(1.1);
+}
+.container-buttons .buttons .clear {
+  color: #cf5050;
+}
+.container-buttons .buttons .result {
+  background-color: #7a1d1d;
+}/*# sourceMappingURL=style.css.map */

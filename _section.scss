@@ -1,0 +1,85 @@
+@mixin flex($direction, $space) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
+
+$color1: #1c1f26;
+$color2: #7a1d1d;
+
+section {
+    margin-top: 1rem;
+    background-color: $color1;
+    width: 24vw;
+    border-radius: 8px;
+
+    .container-calc {
+        height: 22vh;
+        background: #c9c8c8;
+        color: black;
+        border-radius: 8px;
+        @include flex(row-reverse, flex-start);
+        font-size: 2.2rem;
+        padding: 0 1rem;
+        position: relative;
+    }
+}
+
+.back {
+    background-color: transparent;
+    border: 1px solid $color1;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    padding: 0 0.4rem;
+    cursor: pointer;
+    line-height: 1;
+    font-size: 1rem;
+    border-radius: 4px;
+
+    &:hover {
+        color: white;
+        background-color: $color1;
+        transition: background-color 0.2s, color 0.2s;
+    }
+}
+
+.container-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 0.5rem;
+
+    .buttons {
+        @include flex(row, space-between);
+        width: 100%;
+
+        button {
+            background-color: #2f3038;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: none;
+            font-size: 1.5rem;
+            line-height: 0.5;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .clear {
+            color: #cf5050;
+        }
+
+        .result {
+            background-color: $color2;
+        }
+    }
+}

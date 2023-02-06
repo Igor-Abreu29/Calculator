@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <section>
+        <div class="container-calc">
+            <p id="numbers"></p>
+            <button class="back" onclick="backValues()">x</button>
+        </div>
+
+        <div class="container-buttons">
+            <div class="buttons">
+                <button class="clear" onclick="handleResetValue()">C</button>
+                <button onclick="handleInsert('')">()</button>
+                <button onclick="handleInsert('')">%</button>
+                <button onclick="handleInsert('/')">/</button>
+            </div>
+
+            <div class="buttons">
+                <button onclick="handleInsert(7)">7</button>
+                <button onclick="handleInsert(8)">8</button>
+                <button onclick="handleInsert(9)">9</button>
+                <button onclick="handleInsert('*')">x</button>
+            </div>
+            
+            <div class="buttons">
+                <button onclick="handleInsert(4)">4</button>
+                <button onclick="handleInsert(5)">5</button>
+                <button onclick="handleInsert(6)">6</button>
+                <button onclick="handleInsert('-')"> - </button>
+            </div>
+
+            <div class="buttons">
+                <button onclick="handleInsert(1)">1</button>
+                <button onclick="handleInsert(2)">2</button>
+                <button onclick="handleInsert(3)">3</button>
+                <button onclick="handleInsert('+')">+</button>
+            </div>
+
+            <div class="buttons">
+                <button onclick="handleInsert('')">+/-</button>
+                <button onclick="handleInsert(0)">0</button>
+                <button onclick="handleInsert('.')">.</button>
+                <button class="result" onclick="handleCalcValues('=')">=</button>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@mixin flex($direction) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1c1f40;
+    color: white;
+    height: 100vh;
+    font-size: 1rem;
+    @include flex(column)
+}
+
+@import './section'
